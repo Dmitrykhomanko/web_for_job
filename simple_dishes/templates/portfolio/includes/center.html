@@ -1,0 +1,51 @@
+{% load static %}
+<main class="main">
+        <div class="container">
+            <div class="info">
+                <div class="info-text">
+                    <h2 id="tittle-main">Who am I ?</h2>
+                    <p> Hi, my name is Dmitry.
+                        I am a chef with more than 16 years of experience.
+                        I have worked in restaurants, 'office-canteens' and cafes.
+                    </p>
+                    <p> I prefer simplicity and clarity in the dish.
+                        I appreciate the quality of the ingredients so that I believe that the ingredients
+                       play the main 'violin' in the preparation of the dish, as we all know
+                       the violin is a classic, and the classics are eternal.
+
+                    </p>
+                    <a class="resume-btn" href="{% url 'resume' %}">My resume </a>
+
+
+                </div>
+                <img class="main-img" src="{% static 'img/for_index/photo.png' %}" alt="photo">
+            </div>
+        </div>
+        <h2 class="title-works">Portfolio</h2>
+        <div class="my-works">
+            <ul id="works-list">
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food1.png' %}" alt="food">
+                </li>
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food2.png' %}" alt="food">
+                </li>
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food3.png' %}" alt="food">
+                </li>
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food4.png' %}" alt="food">
+                </li>
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food5.png' %}" alt="food">
+                </li>
+                <li class="works-item">
+                    <img src="{% static 'img/for_index/food6.png' %}" alt="food">
+                </li>
+
+            </ul>
+            <a class="main-btn" href="#">Смотреть еще</a>
+        </div>
+        </div>
+    </main>
+

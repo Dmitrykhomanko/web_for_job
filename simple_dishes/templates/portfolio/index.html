@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <header class="header">
+       <div class="container">
+            <div class="header-menu">
+                <a class="logo" href="{% url 'index' %}">Simple<br> dishes</a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-link"   href="#tittle-main">Про меня </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="{% url 'resume' %}">My Resume</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="{% url 'gallery_photos' %}">Portfolio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <a class="phone" href="tel:79096637397">+7 (909) 663 73 97</a>
+                </nav>
+            </div>
+       </div>
+       <div class="line"></div>
+        <section class="headline">
+            <div class="container">
+                <div class="headline-title">
+                    <div class="">
+                        <h1 class="title">Simple dishes</h1>
+                        <h2 class="better">“The simpler the better”</h2>
+<!--                        <a class="headline-btn" href="#">Написать</a>-->
+                        <!-- <a class="works-btn" href="#works-list" style="font-size: 23px;">Portfolio</a> -->
+<!--                        <a class="works-btn" href="gallery/portfolio.html" style="font-size: 23px;">Portfolio</a>-->
+
+                        <video class="video" src="{% static 'img/for_index/for_resume.mp4' %}" autoplay preload="auto" muted
+                            frameborder="0" loop></video>
+                    </div>
+                    <div class="social-networks">
+                        <!-- <a class="social-link" href=""> <img src="images/twitter.png" alt="twitter">
+                        </a> -->
+                        <a class="social-link" href="https://www.facebook.com/dmitry.khomanko.7/photos">
+                            <img src="{% static 'img/for_index/facebook_new.png' %}" alt="facebook">
+                        </a>
+<!--                          <a class="social-link" href="https://www.youtube.com/channel/UCcF5chnfNA9lJ78lJUe0dmw">-->
+<!--                            <img src="{% static 'img/for_index/yout.svg' %}" alt="youtube">-->
+<!--                        </a>-->
+                        <a class="social-link social-link-youtube" href="https://www.youtube.com/channel/UCcF5chnfNA9lJ78lJUe0dmw">
+                            <img src="{% static 'img/for_index/youTube_new.png' %}" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="info">
+                <div class="info-text">
+                    <h2 id="tittle-main">Who am I ?</h2>
+                    <p> Hi, my name is Dmitry.
+                        I am a chef with more than 16 years of experience.
+                        I have worked in restaurants, 'office-canteens' and cafes.
+                    </p>
+                    <p> I prefer simplicity and clarity in the dish.
+                        I appreciate the quality of the ingredients so that I believe that the ingredients
+                       play the main 'violin' in the preparation of the dish, as we all know
+                       the violin is a classic, and the classics are eternal.
+
+                    </p>
+                    <a class="resume-btn" href="{% url 'resume' %}">My resume </a>
+
+
+                </div>
+                <img class="main-img" src="{% static 'img/for_index/photo.png' %}" alt="photo">
+            </div>
+
+            <a href="{% url 'gallery_photos' %}"><h2 class="title-works">Portfolio</h2></a>
+            <div class="my-works">
+
+
+                 <div class="wrapper_galery">
+
+                    <div class="card">
+                       <a href="{% static 'img/for_index/треска1_3.webp' %}" data-lightbox="image-1" data-title="Треска печеная под соусом терияки"><img src="{% static 'img/for_index/food1.png' %}" alt=""></a>
+                    </div>
+
+                    <div class="card">
+                       <a href="{% static 'img/for_index/осминог2_3.webp' %}" data-lightbox="image-1" data-title="Осиног + салат "><img src="{% static 'img/for_index/food2.png' %}" alt=""></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="{% static 'img/for_index/утрка3_3.webp' %}" data-lightbox="image-1" data-title="Утиная грудка + картоф пюре"><img src="{% static 'img/for_index/food3.png' %}" alt=""></a>
+                    </div>
+
+                    <div class="card">
+                       <a href="{% static 'img/for_index/тунец4_3.webp' %}" data-lightbox="image-1" data-title="Тунец + печеные кабачки с сыром + цезарь"><img src="{% static 'img/for_index/food4.png' %}" alt=""></a>
+                    </div>
+
+                    <div class="card">
+                       <a href="{% static 'img/for_index/картоф_котлеты5_3.webp' %}" data-lightbox="image-1" data-title="Картофельные котлеты и салат из печеной тыквы"><img src="{% static 'img/for_index/food5.png' %}" alt=""></a>
+                    </div>
+
+                     <div class="card">
+                       <a href="{% static 'img/for_index/кур_котл6_3.webp' %}" data-lightbox="image-1" data-title="Куриные котлеты + печеная цвет капуста"><img src="{% static 'img/for_index/food6.png' %}" alt=""></a>
+                    </div>
+
+                 </div>
+
+                <a class="main-btn" href="{% url 'gallery_photos' %}">Смотреть еще</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="menu-footer">
+                <a class="logo-footer" href="#">Simple dishes</a>
+                <nav class="nav-footer">
+                    <ul class="footer-list">
+                        <li class="list-item_footer">
+                            <a class="menu-link" href="#tittle-main">Обо мне</a>
+                        </li>
+                        <li class="list-item_footer">
+                            <a class="menu-link" href="#works-list">Мои работы</a>
+                        </li>
+                        <li class="list-item_footer">
+                            <a class="menu-link" href="#">Написать мне</a>
+                        </li>
+                        <li class="list-item_footer">
+                            <a class="menu-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="social-networ_footer">
+                        <!-- <a class="social-link_footer" href=""> <img src="images/twitter yellow.png" alt="twitter">
+                        </a> -->
+                        <a class="social-link_footer" href="//www.facebook.com/dmitry.khomanko.7/photos
+                        "><img src="{% static 'img/for_index/facebook yellow.png' %}" alt="facebook">
+                        </a>
+                        <a class="social-link_footer" href="https://www.youtube.com/channel/UCcF5chnfNA9lJ78lJUe0dmw"> <img src="{% static 'img/for_index/youtube yellow.png' %}" alt="youtube">
+                        </a>
+                    </div>
+                </nav>
+                <a class="phone-footer" href="tel:79096637397">+7 (909) 663 73 97</a>
+            </div>
+        </div>
+    </footer>
+        <script src="{% static 'js/lightbox-plus-jquery.js' %}"></script>
+</body>
+
+</html>

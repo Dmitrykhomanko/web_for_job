@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/for_center_blocks.css' %}">
+    <title>Галерея фоток</title>
+</head>
+
+    <body>
+    {% include 'portfolio/includes/header.html' %}
+        <div class="center_portfolio">
+
+            <div class="wrapper_galery">
+
+                <div class="card">
+                   <a href="{% static 'img/for_index/9mb.png' %}" data-lightbox="image-1" data-title="Треска в соусе терияки"><img src="{% static 'img/for_index/9mb.png' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                   <a href="{% static 'img/for_index/food1.png' %}" data-lightbox="image-1" data-title="Курица терияки"><img src="{% static 'img/for_index/food1.png' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                    <a href="{% static 'img/for_index/food4.png' %}" data-lightbox="image-1" data-title="Курица терияки"><img src="{% static 'img/for_index/food4.png' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                   <a href="{% static 'img/for_index/1500.jpg' %}" data-lightbox="image-1" data-title="Треска в соусе терияки"><img src="{% static 'img/for_index/1500.jpg' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                   <a href="{% static 'img/for_index/light1500.webp' %}" data-lightbox="image-1" data-title="Курица терияки"><img src="{% static 'img/for_index/light1500.webp' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                    <a href="{% static 'img/for_index/food4.png' %}" data-lightbox="image-1" data-title="Курица терияки"><img src="{% static 'img/for_index/food4.png' %}" alt=""></a>
+                </div>
+
+                <div class="card">
+                    <img src="11.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="20221117_143253.webp" alt="">
+                </div>
+
+                <div class="card">
+                    <a href="13.jpg" data-lightbox="image-1" data-title="Курица терияки"><img src="2.jpg" alt=""></a>
+                </div>
+
+                <div class="card">
+                     <a href="20221117_143253.webp" data-lightbox="image-1" data-title="Курица терияки"><img src="13.jpg" alt=""></a>
+                </div>
+
+                <div class="card">
+                    <img src="20221117_143253.webp" alt="">
+                </div>
+
+                <div class="card">
+                     <a href="1.jpg" data-lightbox="image-1" data-title="Курица терияки"><img src="170546009_314762266732889_8496014775437036651_n.jpg" alt=""></a>
+                </div>
+
+                <div class="card">
+                     <a href="1.jpg" data-lightbox="image-1" data-title="Курица терияки"><img src="fonheader.png" alt=""></a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+     {% include 'portfolio/includes/footer.html' %}
+    <script src="{% static 'js/lightbox-plus-jquery.js' %}"></script>
+    </body>
+</html>
+
+
+
+
+
