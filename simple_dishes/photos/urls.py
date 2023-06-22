@@ -6,7 +6,4 @@ urlpatterns = [
 
     path('', photos_main, name='photos_main'),
 
-
-
-
 ]
