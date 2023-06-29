@@ -1,12 +1,18 @@
 version: '3.8'
 
 services:
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - data:/var/lib/postgresql/data/
   web:
     image: indigoxomas/simple_dishes:latest
     restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
+    depends_on:
+      - db
   nginx:
     image: nginx:1.21.3-alpine
     ports:
@@ -18,5 +24,6 @@ services:
     depends_on:
       - web
 volumes:
+  data:
   static_value:
   media_value:
