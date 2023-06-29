@@ -7,9 +7,9 @@
 </head>
 <body>
 <h1>Тут мои фотки</h1>
-{% for i in photos %}
-    <p>{{i.name}}</p>
-    <img src="{{i.photo.url}}" alt="dgd">
+{% for photo in photos %}
+    <p>{{photo.name}}</p>
+    <img src="{{photo.photo.url}}" alt="dgd">
 {% endfor %}
 
 </body>
